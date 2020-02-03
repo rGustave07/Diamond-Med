@@ -8,6 +8,7 @@ const Card = props => {
 			<CardContainer>
 				{props.picture ? (
 					<LazyLoadImage
+						placeholderSrc={props.preview}
 						src={props.picture}
 						effect="blur"
 						height={props.height}

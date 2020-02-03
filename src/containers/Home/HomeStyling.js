@@ -28,6 +28,7 @@ export const CenteredText = styled.h1`
 
 export const HeroButton = styled.button`
 	margin: 2rem;
+	cursor: pointer;
 	box-sizing: border-box;
 	border: none;
 	border-radius: 0.25rem;

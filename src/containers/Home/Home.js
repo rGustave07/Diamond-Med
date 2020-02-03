@@ -8,8 +8,11 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import missionPicture from "../../assets/img/david-iskander-mission-unsplash.jpg";
+import missionPictureLoad from "../../assets/img/preview_images/david-iskander-mission-unsplash_20x20.jpg";
 import visionPicture from "../../assets/img/john-towner-vision-unsplash.jpg";
+import visionPictureLoad from "../../assets/img/preview_images/john-towner-vision-unsplash_20x20.jpg";
 import planPicture from "../../assets/img/hanna-morris-plan-unsplash.jpg";
+import planPictureLoad from "../../assets/img/preview_images/hanna-morris-plan-unsplash_20x20.jpg";
 import content from "../../util/cardcontent";
 
 import {
@@ -65,18 +68,21 @@ const Home = () => {
 						direct="row"
 						spaceEven={true}>
 						<Card
+							preview={missionPictureLoad}
 							picture={missionPicture}
 							height="235px"
 							heading={content.missionCard.heading}
 							ptag={content.missionCard.ptag}
 						/>
 						<Card
+							preview={visionPictureLoad}
 							picture={visionPicture}
 							height="235px"
 							heading={content.visionCard.heading}
 							ptag={content.visionCard.ptag}
 						/>
 						<Card
+							preview={planPictureLoad}
 							picture={planPicture}
 							height="235px"
 							heading={content.planCard.heading}
